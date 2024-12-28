@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madness | Restaurant</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome (Sosyal Medya İkonları için yzdığım kodlar) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+/* ==========================================
+   RESTAURANT BÖLÜMÜ - EŞİT BOYUTLU KUTULARım 
+========================================== */
+.restaurant-section {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #c0a159; /* Altın Sarısı */
+    margin-bottom: 20px;
+}
+
+.lead {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+/* Flexbox Düzeni ile Eşit Kartlar */
+.equal-height-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.col-md-4 {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex: 1 1 30%; /* Kartlar eşit genişlikte olacak */
+    margin-bottom: 20px;
+}
+
+.card-custom {
+    width: 100%; /* Kartlar tüm genişliği kaplayacak */
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.card-custom img {
+    height: 250px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.card-body {
+    background-color: #ffffff;
+    padding: 15px;
+    flex-grow: 1; /* Kartın body kısmının büyümesini sağla */
+}
+
+.card-body .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #014122; /* Koyu Yeşil */
+}
+
+.card-body .card-text {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Responsive Düzenlemeler */
+@media (max-width: 768px) {
+    .restaurant-section .equal-height-cards {
+        flex-direction: column; /* Küçük ekranlarda kartlar alt alta dizilsin */
+        text-align: center;
+    }
+
+    .card-custom img {
+        height: 200px; /* Görselleri biraz küçültüyoruz */
+    }
+
+    .section-title {
+        font-size: 2rem; /* Başlık fontunu küçük ekranlarda küçült */
+    }
+
+    .lead {
+        font-size: 1rem; /* Metin boyutunu da mobilde küçültüyoruz */
+    }
+}
+
+
+
+
+    </style>
+<body>
+  
+
+        <!-- Navbar Başlangıcım -->
+        <nav class="navbar navbar-expand-lg bg-custom px-4">
+            <div class="container-fluid">
+                <!-- Logo -->
+                <a class="navbar-brand logo" href="index.html">MADNESS</a>
+                <!-- Mobil Menü Butonum -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Menüyü Aç/Kapat">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Menü Öğelerim -->
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="hakkımızda.html">Hakkında</a></li>
+                        <li class="nav-item"><a class="nav-link" href="menu.html">Menüler</a></li>
+                        <li class="nav-item"><a class="nav-link" href="restaurant.html">Restaurant</a></li>
+                        <li class="nav-item"><a class="nav-link" href="konum.html">Saatler ve Konum</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#gallery">Galeri</a></li>
+                        <li class="nav-item"><a class="nav-link rezervasyon" href="rezervasyon.html">Rezervasyon</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+<!-- Restaurant Bölümüm -->
+<section id="restaurant" class="restaurant-section py-5">
+    <div class="container text-center">
+        <h2 class="section-title mb-4 text-c0a159">Restoranımız</h2>
+        <p class="lead mb-4">
+            Madness, gastronomi dünyasında eşsiz bir deneyim sunmayı amaçlayan bir restorandır. Kaliteli malzemeler, zarif sunumlar ve eşsiz bir atmosferle, her misafirimize unutulmaz bir yemek deneyimi yaşatmak için çalışıyoruz.
+        </p>
+        <p class="mb-4">
+            2010 yılında İstanbul'da açılan Madness, kısa sürede kendine geniş bir müşteri kitlesi edinmiş ve gastronomi dünyasında önemli bir yere sahip olmuştur. Misyonumuz, her zaman taze, kaliteli ve yerel malzemeleri kullanarak misafirlerimize en iyi yemekleri sunmaktır.
+        </p>
+        
+        <div class="row">
+            <!-- Restaurant Görseli 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="index-gorsel/restoran.webp" class="card-img-top img-fluid" alt="Restoran Görseli 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Modern Tasarım</h5>
+                        <p class="card-text">Restoranımız, modern ve şık tasarımıyla sizi kendine hayran bırakacak.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Restaurant Görseli 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="index-gorsel/zarif sunum.webp" class="card-img-top img-fluid" alt="Restoran Görseli 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Zarif Sunumlar</h5>
+                        <p class="card-text">Yemeklerimiz, lezzet kadar sunumlarıyla da dikkat çeker.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Restaurant Görseli 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="index-gorsel/eşsiz bir deneyim.webp" class="card-img-top img-fluid" alt="Restoran Görseli 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Eşsiz Bir Deneyim</h5>
+                        <p class="card-text">Madness'te yemek yediğinizde sadece lezzet değil, unutulmaz bir deneyim de yaşayacaksınız.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+        
+
+            <!-- Footer Başlangıcım -->
+    <footer class="footer bg-dark text-white pt-5 pb-4">
+        <div class="container text-center text-md-start">
+            <div class="row align-items-center">
+                <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
+                    <h5 class="footer-logo">MADNESS</h5>
+                </div>
+                <div class="col-md-4 text-center mb-3 mb-md-0">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-x-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                </div>
+                <div class="col-md-4 text-center text-md-end">
+                    <p class="footer-text mb-0">© 2024 <strong>Madness</strong>. Tüm Hakları Saklıdır.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+    <!-- Bootstrap JS basitce yazdığım yer  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

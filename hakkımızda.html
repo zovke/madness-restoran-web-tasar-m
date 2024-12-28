@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madness | Hakkımızda</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome (Sosyal Medya İkonları için yazdığım kkod lar) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+/* ==========================================
+   HAKKIMIZDA BÖLÜMÜm
+========================================== */
+.about-section {
+    background-color: #f8f9fa; /* Açık gri arkaplan */
+    padding: 60px 0;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #c0a159; /* Altın Sarısı */
+}
+
+.lead {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.about-section img {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-section h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #014122; /* Koyu Yeşil */
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* İkinci paragraflar için küçük bir aralık ekleniyor */
+.about-section p + p {
+    margin-top: 20px;
+}
+
+/* Responsive Düzenlemeler */
+@media (max-width: 768px) {
+    .about-section .row {
+        text-align: center;
+    }
+
+    .about-section h3 {
+        font-size: 1.8rem;
+    }
+
+    .about-section img {
+        width: 100%;
+    }
+}
+
+
+    
+    
+    </style>
+<body>
+
+        <!-- Navbar Başlangıcım -->
+        <nav class="navbar navbar-expand-lg bg-custom px-4">
+            <div class="container-fluid">
+                <!-- Logo -->
+                <a class="navbar-brand logo" href="index.html">MADNESS</a>
+                <!-- Mobil Menü Butonum -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Menüyü Aç/Kapat">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Menü Öğelerim -->
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="hakkımızda.html">Hakkında</a></li>
+                        <li class="nav-item"><a class="nav-link" href="menu.html">Menüler</a></li>
+                        <li class="nav-item"><a class="nav-link" href="restaurant.html">Restaurant</a></li>
+                        <li class="nav-item"><a class="nav-link" href="konum.html">Saatler ve Konum</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#gallery">Galeri</a></li>
+                        <li class="nav-item"><a class="nav-link rezervasyon" href="rezervasyon.html">Rezervasyon</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+<!-- Hakkımızda Bölümüm -->
+<section id="about" class="about-section py-5">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-12">
+                <h2 class="section-title text-c0a159 mb-4">Biz Kimiz?</h2>
+                <p class="lead mb-4">
+                    Madness, gastronomi dünyasında unutulmaz anlar yaratmak için tasarlanmış bir restorandır. 
+                    Şeflerimizin sanatı, lezzetli yemekler ve zarif sunumlarla birleşerek her ziyaretçimizi eşsiz bir deneyimle buluşturuyor. 
+                    Her detay, müşterilerimizin keyifli bir deneyim yaşaması için titizlikle düşünülmüştür.
+                </p>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <img src="index-gorsel/şef foto.webp" class="img-fluid rounded shadow" alt="Şeflerimiz">
+            </div>
+            <div class="col-md-6">
+                <h3 class="mb-4">Şeflerimizin Sanatı</h3>
+                <p>
+                    Madness, sadece bir restoran değil, aynı zamanda bir yaşam tarzıdır. Her tabakta zarafet ve her lokmada mükemmellik ararız. 
+                    Alanında uzman şeflerimiz, özgün tariflerle yemekleri sanata dönüştürür. 
+                    Mükemmel lezzetleri estetik sunumlarla birleştirerek misafirlerimize unutulmaz bir deneyim sunmak bizim için çok önemlidir.
+                </p>
+                <p>
+                    Menümüzde, her türlü damak zevkine hitap edecek özel yemekler bulunmaktadır. Etlerden deniz ürünlerine, tatlılardan başlangıçlara kadar 
+                    her bir yemeğimizde, taze ve kaliteli malzemeler kullanarak eşsiz bir tat profili oluşturuyoruz. 
+                    Ayrıca, tüm yemeklerimizde yerel ve mevsimsel ürünleri kullanmaya özen gösteriyoruz.
+                </p>
+            </div>
+        </div>
+        <div class="row mt-5 text-center">
+            <div class="col-12">
+                <h4 class="section-title text-c0a159 mb-4">Misyonumuz ve Vizyonumuz</h4>
+                <p>
+                    Misyonumuz, misafirlerimize sadece bir yemek değil, aynı zamanda bir deneyim sunmaktır. 
+                    Şeflerimizin ve ekibimizin tutkusu, her bir misafiri en üst düzeyde memnun etmek için bir araya gelir.
+                </p>
+                <p>
+                    Vizyonumuz ise, gastronomi dünyasında bir öncü olmak ve her geçen gün kendimizi daha da geliştirerek, 
+                    global mutfak trendlerini restoranımıza entegre etmektir. Her zaman yenilikçi ve yaratıcı olmayı hedefliyoruz.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+        
+
+            <!-- Footer Başlangıcıyazdığım kod  -->
+    <footer class="footer bg-dark text-white pt-5 pb-4">
+        <div class="container text-center text-md-start">
+            <div class="row align-items-center">
+                <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
+                    <h5 class="footer-logo">MADNESS</h5>
+                </div>
+                <div class="col-md-4 text-center mb-3 mb-md-0">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-x-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                </div>
+                <div class="col-md-4 text-center text-md-end">
+                    <p class="footer-text mb-0">© 2024 <strong>Madness</strong>. Tüm Hakları Saklıdır.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+    <!-- Bootstrap JS basitce yazdığım yeri  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

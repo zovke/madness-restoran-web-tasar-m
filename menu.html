@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madness | Menü</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome (Sosyal Medya İkonları için yazdığım kod ) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+
+/* ==========================================
+   MENÜ BÖLÜMÜm
+========================================== */
+.menu-section {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #c0a159; /* Altın Sarısı */
+    margin-bottom: 40px;
+}
+
+/* Flexbox ile Eşit Kartlarım */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.col-md-4 {
+    flex: 1 1 30%; /* Her kart eşit genişlikte olacak */
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.card-custom {
+    width: 100%; /* Kartlar tüm genişliği kaplayacak şekiln de yazdığım kod */
+    border: none;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.card-custom img {
+    height: 250px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.card-custom .card-body {
+    background-color: #ffffff;
+    padding: 15px;
+    flex-grow: 1; /* Kartın body kısmının büyümesini sağlayan yazdığım kod */
+}
+
+.card-custom .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #014122; /* Koyu Yeşil */
+}
+
+.card-custom .card-text {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Responsive Düzenlemelerim */
+@media (max-width: 768px) {
+    .menu-section .row {
+        flex-direction: column; /* Küçük ekranlarda kartlar alt alta dizilsin düzenli gözüksün istediğim yer */
+    }
+
+    .card-custom img {
+        height: 200px; /* Görsel boyutu küçük ekranlarda küçülsün yazdığım ekrana uydurduğum yer */
+    }
+
+    .section-title {
+        font-size: 2rem; /* Başlık fontunu küçük ekranlarda küçültüğüm yer  */
+    }
+}
+
+
+
+
+    </style>
+<body>
+  
+
+        <!-- Navbar Başlangıcım -->
+        <nav class="navbar navbar-expand-lg bg-custom px-4">
+            <div class="container-fluid">
+                <!-- Logo -->
+                <a class="navbar-brand logo" href="index.html">MADNESS</a>
+                <!-- Mobil Menü Butonum -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Menüyü Aç/Kapat">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Menü Öğelerim -->
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="hakkımızda.html">Hakkında</a></li>
+                        <li class="nav-item"><a class="nav-link" href="menu.html">Menüler</a></li>
+                        <li class="nav-item"><a class="nav-link" href="restaurant.html">Restaurant</a></li>
+                        <li class="nav-item"><a class="nav-link" href="konum.html">Saatler ve Konum</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#gallery">Galeri</a></li>
+                        <li class="nav-item"><a class="nav-link rezervasyon" href="rezervasyon.html">Rezervasyon</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+<!-- Menü Bölümüm -->
+<section id="menu" class="menu-section py-5">
+    <div class="container text-center">
+        <h2 class="section-title mb-5 text-c0a159">Menülerimiz</h2>
+        <div class="row">
+            <!-- Menü 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card card-custom">
+                    <img src="index-gorsel/baslangıç.webp" class="card-img-top" alt="Başlangıçlar">
+                    <div class="card-body">
+                        <h5 class="card-title">Başlangıçlar</h5>
+                        <p class="card-text">Lezzet dolu başlangıçlarımız ile yemek keyfinize başlayın.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Menü 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card card-custom">
+                    <img src="index-gorsel/ana yemek.webp" class="card-img-top" alt="Ana Yemekler">
+                    <div class="card-body">
+                        <h5 class="card-title">Ana Yemekler</h5>
+                        <p class="card-text">Şeflerimizin özenle hazırladığı eşsiz ana yemekler.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Menü 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card card-custom">
+                    <img src="index-gorsel/tatlı.webp" class="card-img-top" alt="Tatlılar">
+                    <div class="card-body">
+                        <h5 class="card-title">Tatlılar</h5>
+                        <p class="card-text">Yemek sonrası tatlı bir dokunuş ile final yapın.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Menü 4 -->
+            <div class="col-md-4 mb-4">
+                <div class="card card-custom">
+                    <img src="index-gorsel/vejeteryan.webp" class="card-img-top" alt="Vejetaryen Seçenekler">
+                    <div class="card-body">
+                        <h5 class="card-title">Vejetaryen Seçenekler</h5>
+                        <p class="card-text">Vejetaryen misafirlerimiz için özel hazırlanmış lezzetler.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Menü 5 -->
+            <div class="col-md-4 mb-4">
+                <div class="card card-custom">
+                    <img src="index-gorsel/deniz ürün.webp" class="card-img-top" alt="Deniz Ürünleri">
+                    <div class="card-body">
+                        <h5 class="card-title">Deniz Ürünleri</h5>
+                        <p class="card-text">Taze ve kaliteli deniz ürünlerinden hazırlanan özel yemekler.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Menü 6 -->
+            <div class="col-md-4 mb-4">
+                <div class="card card-custom">
+                    <img src="index-gorsel/içecekler.webp" class="card-img-top" alt="İçecekler">
+                    <div class="card-body">
+                        <h5 class="card-title">İçecekler</h5>
+                        <p class="card-text">Restoranımızda sunulan zengin içecek seçenekleri ile yemeklerinizi taçlandırın.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+        
+
+            <!-- Footer Başlangıcı yazdığım yer  -->
+    <footer class="footer bg-dark text-white pt-5 pb-4">
+        <div class="container text-center text-md-start">
+            <div class="row align-items-center">
+                <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
+                    <h5 class="footer-logo">MADNESS</h5>
+                </div>
+                <div class="col-md-4 text-center mb-3 mb-md-0">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-x-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                </div>
+                <div class="col-md-4 text-center text-md-end">
+                    <p class="footer-text mb-0">© 2024 <strong>Madness</strong>. Tüm Hakları Saklıdır.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+    <!-- Bootstrap JS basit  yazdığım yer  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

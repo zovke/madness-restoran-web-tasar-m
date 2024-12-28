@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madness | Saat ve Konum</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome (Sosyal Medya İkonları için yazdığım  bölmüm) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" crossorigin="anonymous"></script>
+    <style>
+        /* ==========================================
+           SAATLER VE KONUM BÖLÜMÜm
+        ========================================== */
+        .hours-location-section {
+            background-color: #f8f9fa;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #c0a159; /* Altın Sarısı */
+            margin-bottom: 30px;
+        }
+
+        .lead {
+            font-size: 1.2rem;
+            color: #555;
+            margin-bottom: 40px;
+        }
+
+        .hours-location-text {
+            font-size: 1.1rem;
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        /* Konum ve İletişim Bilgisi yazdığım kodun yeri */
+        .hours-location-section h3 {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #014122; /* Koyu Yeşil */
+            margin-bottom: 15px;
+        }
+
+        .hours-location-section p {
+            font-size: 1.1rem;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        /* Buton Stilim */
+        .btn-custom {
+            background-color: #c0a159;
+            color: #014122;
+            font-weight: bold;
+            border-radius: 25px;
+            padding: 10px 30px;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+        }
+
+        .btn-custom:hover {
+            background-color: #014122;
+            color: #c0a159;
+        }
+
+        /* Navbar */
+        .bg-custom {
+            background-color: #014122; /* Koyu Yeşil */
+        }
+
+        .navbar-brand.logo {
+            color: #c0a159 !important; /* Altın Sarısı Logo */
+            font-weight: bold;
+            letter-spacing: 1px;
+            transition: color 0.3s ease;
+        }
+
+        .navbar-brand.logo:hover {
+            color: #ffffff !important; /* Hover Rengi */
+        }
+
+        .nav-link {
+            color: #ffffff !important; /* Beyaz Yazılar */
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: #c0a159 !important;
+        }
+
+        /* Footer en aşağıda ki haklar saklıdır yazan yerin kodu */
+        .footer {
+            background-color: #333; /* Koyu Arka Plan */
+            color: #ffffff; /* Beyaz Yazılar */
+            font-size: 1rem;
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+
+        .footer-logo {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #c0a159; /* Altın Sarısı Logo */
+            margin-bottom: 10px;
+        }
+
+        .social-icon {
+            color: #ffffff;
+            font-size: 1.5rem;
+            margin-right: 15px;
+            transition: color 0.3s ease;
+        }
+
+        .social-icon:hover {
+            color: #c0a159; /* Hover rengi altın sarısı */
+        }
+
+        .footer-text {
+            font-size: 1rem;
+            color: #ffffff;
+        }
+
+        /* Sosyal medya ikonlarını hizalamak için yaz dığım kod css*/
+        .social-icon {
+            margin-right: 10px;
+        }
+
+        /* Responsive Düzenlemeleri yaptığım yer */
+        @media (max-width: 768px) {
+            .hours-location-section .row {
+                text-align: center;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .lead {
+                font-size: 1rem;
+            }
+
+            .btn-custom {
+                padding: 10px 25px;
+            }
+
+            .navbar-brand.logo {
+                font-size: 1.6rem;
+            }
+
+            .footer-logo {
+                font-size: 1.5rem;
+            }
+
+            .footer-text {
+                font-size: 0.9rem;
+            }
+
+            .social-icon {
+                margin-right: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar Başlangıcım -->
+    <nav class="navbar navbar-expand-lg bg-custom px-4">
+        <div class="container-fluid">
+            <!-- Logo yaptığım yer -->
+            <a class="navbar-brand logo" href="index.html">MADNESS</a>
+            <!-- Mobil Menü Butonum -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Menüyü Aç/Kapat">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Menü Öğelerim -->
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="hakkımızda.html">Hakkında</a></li>
+                    <li class="nav-item"><a class="nav-link" href="menu.html">Menüler</a></li>
+                    <li class="nav-item"><a class="nav-link" href="restaurant.html">Restaurant</a></li>
+                    <li class="nav-item"><a class="nav-link" href="konum.html">Saatler ve Konum</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#gallery">Galeri</a></li>
+                    <li class="nav-item"><a class="nav-link rezervasyon" href="rezervasyon.html">Rezervasyon</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Saatler ve Konum Bölümüm -->
+    <section id="hours-location" class="hours-location-section py-5">
+        <div class="container">
+            <h2 class="section-title mb-4 text-c0a159">Saatler ve Konum</h2>
+            <p class="lead mb-4">Restoranımıza olan yolculuğunuzu planlayın! Aşağıdaki bilgilerle restoranımızın adresine ve çalışma saatlerine kolayca ulaşabilirsiniz.</p>
+
+            <p class="hours-location-text">
+                Madness, konuklarımızın lezzetli yemeklerin tadını çıkarırken rahat bir atmosferde zaman geçirebileceği bir yerdir. Restoranımız, yemeklerinizi keyifle yediğiniz bir ortamda hizmet vermeye devam etmektedir.
+            </p>
+
+            <div class="row">
+                <!-- Adres Bilgisim -->
+                <div class="col-md-6">
+                    <h3>Adres:</h3>
+                    <p>100 Front St W, Toronto, ON M5J 1E3</p>
+                    <a href="https://www.google.com/maps?q=100+Front+St+W,+Toronto,+ON+M5J+1E3" target="_blank" class="btn btn-custom">Haritayı Görüntüle</a>
+                </div>
+
+                <!-- İletişim Bilgisim -->
+                <div class="col-md-6">
+                    <h3>İletişim:</h3>
+                    <p><strong>Telefon:</strong> <a href="tel:+14163682511">+90 551 192 0684</a></p>
+                    <p><strong>Email:</strong> <a href="mailto:info@madness.com">info@madness.com</a></p>
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <h3>Hafta İçi</h3>
+                    <p>07:00 AM - 11:00 AM (Kahvaltı)<br>12:00 PM - 2:00 PM (Öğle Yemeği)<br>5:00 PM - 10:00 PM (Akşam Yemeği)</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Hafta Sonu</h3>
+                    <p>07:00 AM - 11:30 AM (Kahvaltı)<br>12:00 PM - 2:00 PM (Öğle Yemeği)<br>5:00 PM - 10:00 PM (Akşam Yemeği)</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Pazar Brunch</h3>
+                    <p>12:00 PM - 2:00 PM</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Başlangıcım -->
+    <footer class="footer bg-dark text-white pt-5 pb-4">
+        <div class="container text-center text-md-start">
+            <div class="row align-items-center">
+                <!-- Logom yaptığım yer -->
+                <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
+                    <h5 class="footer-logo">MADNESS</h5>
+                </div>
+
+                <!-- Sosyal Medya İkonlarım -->
+                <div class="col-md-4 text-center mb-3 mb-md-0">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-x-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                </div>
+
+                <!-- Telif Hakkım yazdığım yer -->
+                <div class="col-md-4 text-center text-md-end">
+                    <p class="footer-text mb-0">© 2024 <strong>Madness</strong>. Tüm Hakları Saklıdır.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS basit yazdığım kod  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

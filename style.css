@@ -1,0 +1,136 @@
+/* ==========================================
+   GENEL AYARLAR
+========================================== */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ==========================================
+   HEADER (NAVBAR)
+========================================== */
+.bg-custom {
+    background-color: #014122; /* Yeşil Arkaplan */
+    border-bottom: 2px solid #c0a159; /* Alt Çizgi Altın Sarısı */
+}
+
+.navbar-brand.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #c0a159 !important; /* Altın Rengi Logo */
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.navbar-brand.logo:hover {
+    color: #e0c385 !important; /* Hover Efekti */
+}
+
+/* Navbar Menü Öğeleri */
+.nav-link {
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin: 0 10px;
+    color: #ffffff !important;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #c0a159 !important;
+    text-decoration: underline;
+}
+
+/* Rezervasyon Butonu */
+.nav-link.rezervasyon {
+    border: 1px solid #c0a159;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+.nav-link.rezervasyon:hover {
+    background-color: #c0a159;
+    color: #014122 !important;
+    text-decoration: none;
+}
+
+
+/* ==========================================
+   FOOTER
+========================================== */
+.footer {
+    background-color: #014122; /* Koyu Yeşil Arkaplan */
+    color: #ffffff; /* Beyaz Yazı Rengi */
+    font-size: 14px;
+    line-height: 1.8;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+/* Footer Logo */
+.footer-logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #c0a159;
+    letter-spacing: 1px;
+}
+
+/* Footer Linkler */
+.footer a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #c0a159;
+    text-decoration: underline;
+}
+
+/* Sosyal Medya İkonları */
+.social-icon {
+    display: inline-block;
+    font-size: 1.4rem;
+    margin: 0 10px;
+    color: #ffffff;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.social-icon:hover {
+    color: #c0a159;
+    transform: scale(1.2); /* Büyüme Efekti */
+}
+
+/* Telif Hakkı */
+.footer hr {
+    border-top: 1px solid #c0a159;
+}
+
+.footer p.footer-text {
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+/* ==========================================
+   RESPONSIVE DÜZENLEMELER
+========================================== */
+@media (max-width: 768px) {
+    .footer .text-md-start {
+        text-align: center !important;
+    }
+
+    .social-icon {
+        margin: 5px;
+    }
+
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-section p {
+        font-size: 1rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+}
